@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { WidgetCcatComponent } from './components/widget-ccat/widget-ccat.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [WidgetCcatComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'widget-ccat-angular';

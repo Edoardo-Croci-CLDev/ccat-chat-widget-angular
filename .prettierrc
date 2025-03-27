@@ -1,0 +1,10 @@
+{
+    "bracketSameLine": false,
+    "htmlWhitespaceSensitivity": "ignore",
+    "printWidth": 150,
+    "singleAttributePerLine": true,
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "endOfLine": "auto",
+    "tabWidth": 2
+}

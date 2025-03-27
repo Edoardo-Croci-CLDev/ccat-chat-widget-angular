@@ -1,0 +1,17 @@
+{
+  "name": "ccat-chat-widget-angular",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^19.2.0",
+    "@angular/core": "^19.2.0",
+    "@angular/forms": "^19.2.0",
+    "@angular/animations": "^19.2.0",
+    "ccat-api": "^0.12.1"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "ng-packagr": "^19.2.0"
+  }
+}

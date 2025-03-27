@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --user-message-bg-color: #fee600;
+  --user-message-text-color: #000000;
+  --bot-message-bg-color: #000000;
+  --bot-message-text-color: #ffffff;
+  --chat-container-bg-color: #f3f6fc;
+  --chat-body-top-bottom-border-color: #eee;
+  --send-btn-bg-color: #000000;
+}

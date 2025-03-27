@@ -3,6 +3,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "ccat-chat-widget-angular-lib": [
+        "./dist/ccat-chat-widget-angular"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,

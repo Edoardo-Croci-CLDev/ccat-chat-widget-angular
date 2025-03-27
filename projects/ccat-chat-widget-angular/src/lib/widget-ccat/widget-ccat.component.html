@@ -1,0 +1,80 @@
+<div
+  class="cat-icon"
+  *ngIf="!isOpenChat"
+  [@hoverWiggle]="canAnimate && isHovered ? 'active' : 'inactive'"
+  [@hoverScale]="canAnimate && isHovered ? 'active' : 'inactive'"
+  (mouseenter)="isHovered = true"
+  (mouseleave)="isHovered = false"
+  (click)="toggleChat()"
+>
+  <img
+    src="https://cheshire-cat-ai.github.io/docs/assets/img/cheshire-cat-logo.svg"
+    alt="Cat Icon"
+  />
+</div>
+
+<div
+  id="chat-container"
+  *ngIf="isOpenChat"
+>
+  <div class="chat-header">
+    <div class="title">{{ agentName }}</div>
+    <div
+      id="close-btn"
+      (click)="toggleChat()"
+    >
+      x
+    </div>
+  </div>
+
+  <div
+    class="chat-top"
+    *ngIf="showChatTop"
+  >
+    <div class="logo">
+      <img
+        src="{{ imgSrc }}"
+        alt="{{ imgAlt }}"
+      />
+    </div>
+    <div class="bot-name">{{ agentName }}</div>
+  </div>
+
+  <div
+    [ngClass]="!showChatTop ? 'mt-1' : ''"
+    id="chat-body"
+    #messagesContainerRef
+  >
+    <div
+      *ngFor="let message of messages"
+      class="chatbot-message"
+      [ngClass]="{
+        'chatbot-user': message.sender === 'user',
+        'chatbot-self': message.sender === 'bot' || message.sender === 'bot_writing'
+      }"
+    >
+      <ng-container *ngIf="message.sender === 'bot_writing'; else msgText">
+        <span class="loader"></span>
+      </ng-container>
+      <ng-template #msgText>{{ message.text }}</ng-template>
+    </div>
+  </div>
+
+  <div class="chat-footer">
+    <input
+      id="chat-input"
+      type="text"
+      [(ngModel)]="input"
+      placeholder="Messaggio..."
+      (keydown.enter)="sendMessage()"
+      [disabled]="!gattoAttivo || isProcessing"
+    />
+    <button
+      class="send-btn"
+      (click)="sendMessage()"
+      [disabled]="!gattoAttivo || isProcessing"
+    >
+      <span>&#10148;</span>
+    </button>
+  </div>
+</div>
