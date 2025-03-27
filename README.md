@@ -1,59 +1,127 @@
-# WidgetCcatAngular
+# 🐱 Cheshire Cat AI Chat Widget
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+An elegant and fully customizable **Angular widget** for seamless integration with **Cheshire Cat AI**.  
+Perfect for adding a conversational assistant to your Angular apps with minimal setup.
 
-## Development server
+> 💬 Plug, personalize, and play: your smart chatbot is ready to go.
 
-To start a local development server, run:
+![Cheshire Cat Widget Demo](https://your-gif-url-here.com/demo.gif)
 
-```bash
-ng serve
-```
+## 🚀 System Requirements
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular **19.2.0**
+- Connection to a running **cheshire-cat** instance
+- The `ccat-api` package must be installed (npm i ccat-api)
 
-## Code scaffolding
+## 📦 Installation
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Install via npm:
 
 ```bash
-ng generate --help
+npm install cheshire-cat-widget-angular
 ```
 
-## Building
+## 🧩 Component Configuration (Standalone)
 
-To build the project run:
+Since this is a **standalone component**, you can import it directly into your component without needing to declare it in a module.
 
-```bash
-ng build
+```ts
+import { Component } from "@angular/core";
+import { CatClient } from "ccat-api";
+import { WidgetCcatComponent } from "cheshire-cat-widget-angular";
+
+@Component({
+  selector: "app-root",
+  standalone: true,
+  imports: [WidgetCcatComponent],
+  template: `
+    <app-widget-ccat
+      [baseUrl]="'localhost'"
+      [port]="1865"
+      [userId]="'user'"
+      [initialPhrase]="'Welcome! How can I assist you today?'"
+      [userMessageBgColor]="'#e0f7fa'"
+      [botMessageBgColor]="'#f1f8e9'"
+    ></app-widget-ccat>
+  `,
+})
+export class AppComponent {}
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🖼️ Template Usage
 
-## Running unit tests
+You can drop the widget anywhere in your HTML and configure it via inputs:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+```html
+<app-widget-ccat
+  [baseUrl]="'localhost'"
+  [port]="1865"
+  [userId]="'user'"
+  [initialPhrase]="'Hi! How can I help you?'"
+  [userMessageBgColor]="'#fee600'"
+  [botMessageBgColor]="'#000000'"
+></app-widget-ccat>
 ```
 
-## Running end-to-end tests
+## ⚙️ Customizable Properties
 
-For end-to-end (e2e) testing, run:
+### 🔌 Connection Settings
 
-```bash
-ng e2e
-```
+| Property   | Default       | Description                                                                 |
+| ---------- | ------------- | --------------------------------------------------------------------------- |
+| `baseUrl`  | `'localhost'` | Cheshire Cat server URL                                                     |
+| `port`     | `1865`        | Port number                                                                 |
+| `userId`   | `'user'`      | Unique user identifier                                                      |
+| `secure`   | `false`       | Enables HTTPS connection                                                    |
+| `chatType` | `'streaming'` | Chat type: `streaming` (tokens stream in live) or `chat` (waits full reply) |
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### 💬 Message Settings
 
-## Additional Resources
+| Property        | Description                             |
+| --------------- | --------------------------------------- |
+| `initialPhrase` | Initial bot message                     |
+| `sorryPhrase`   | Error message when something goes wrong |
+| `agentName`     | Custom name for your bot                |
+| `imgSrc`        | Logo or avatar image URL                |
+| `imgAlt`        | Alt text for the image                  |
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 🎨 Style Settings
+
+| Property                       | Default     | Description                     |
+| ------------------------------ | ----------- | ------------------------------- |
+| `userMessageBgColor`           | `'#fee600'` | User message background color   |
+| `userMessageTextColor`         | `'#000000'` | User message text color         |
+| `botMessageBgColor`            | `'#000000'` | Bot message background color    |
+| `botMessageTextColor`          | `'#ffffff'` | Bot message text color          |
+| `chatContainerBgColor`         | `'#f3f6fc'` | Chat container background color |
+| `chatBodyTopBottomBorderColor` | `'#eeeeee'` | Border color for the chat body  |
+| `sendBtnBgColor`               | `'#000000'` | Send button background color    |
+
+## 🛠 Support
+
+For issues, bugs, or feature requests, please open an issue on the [GitHub repository](#).
+
+## 📄 License
+
+MIT License  
+Copyright (c) 2024 Cheshire Cat AI
+
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software and associated documentation files (the "Software"), to deal  
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in  
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  
+THE SOFTWARE.
+
+> 🧠 Ready to bring your UI to life? Let your chatbot be the first to smile. With Cheshire Cat AI, it’s already purring.
