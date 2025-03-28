@@ -9,9 +9,9 @@ Perfect for adding a conversational assistant to your Angular apps with minimal 
 
 ## 🚀 System Requirements
 
-- Angular **19.2.0**
+- Angular **19.2.0** (developed with angular 19.2.0, not tested with previous versions, if you have a previous version let us know if it works for you and we'll add it to the list of working angular versions)
 - Connection to a running **cheshire-cat** instance
-- The `ccat-api` package must be installed (npm i ccat-api)
+- The `ccat-api` package must be installed (via `npm i ccat-api`)
 
 ## 📦 Installation
 
@@ -103,25 +103,8 @@ For issues, bugs, or feature requests, please open an issue on the [GitHub repos
 
 ## 📄 License
 
-MIT License  
-Copyright (c) 2024 Cheshire Cat AI
+Copyright (C) 2025 Edoardo Croci
 
-Permission is hereby granted, free of charge, to any person obtaining a copy  
-of this software and associated documentation files (the "Software"), to deal  
-in the Software without restriction, including without limitation the rights  
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
-copies of the Software, and to permit persons to whom the Software is  
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in  
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  
-THE SOFTWARE.
+You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/.
 
 > 🧠 Ready to bring your UI to life? Let your chatbot be the first to smile. With Cheshire Cat AI, it’s already purring.
