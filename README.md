@@ -99,11 +99,11 @@ You can drop the widget anywhere in your HTML and configure it via inputs:
 
 ## 🛠 Support
 
-For issues, bugs, or feature requests, please open an issue on the [GitHub repository](#).
+For issues, bugs, or feature requests, please open an issue on the [GitHub repository](#https://github.com/Edoardo-Croci-CLDev/ccat-chat-widget-angular/).
 
 ## 📄 License
 
-Copyright (C) 2025 Edoardo Croci
+Copyright (C) 2025 CLDev
 
 You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/.
 
