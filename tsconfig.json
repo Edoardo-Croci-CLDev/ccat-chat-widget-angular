@@ -4,7 +4,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "ccat-chat-widget-angular-lib": [
+      "ccat-chat-widget-angular": [
         "./dist/ccat-chat-widget-angular"
       ]
     },

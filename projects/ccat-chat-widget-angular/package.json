@@ -1,6 +1,6 @@
 {
   "name": "ccat-chat-widget-angular",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0",
