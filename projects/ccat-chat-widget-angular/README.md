@@ -18,7 +18,7 @@ Perfect for adding a conversational assistant to your Angular apps with minimal 
 Install via npm:
 
 ```bash
-npm install cheshire-cat-widget-angular
+npm i ccat-chat-widget-angular
 ```
 
 ## 🧩 Component Configuration (Standalone)
@@ -28,7 +28,7 @@ Since this is a **standalone component**, you can import it directly into your c
 ```ts
 import { Component } from "@angular/core";
 import { CatClient } from "ccat-api";
-import { WidgetCcatComponent } from "cheshire-cat-widget-angular";
+import { WidgetCcatComponent } from 'ccat-chat-widget-angular';
 
 @Component({
   selector: "app-root",

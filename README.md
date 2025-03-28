@@ -18,7 +18,7 @@ Perfect for adding a conversational assistant to your Angular apps with minimal 
 Install via npm:
 
 ```bash
-npm install cheshire-cat-widget-angular
+npm i ccat-chat-widget-angular
 ```
 
 ## 🧩 Component Configuration (Standalone)
@@ -28,7 +28,7 @@ Since this is a **standalone component**, you can import it directly into your c
 ```ts
 import { Component } from "@angular/core";
 import { CatClient } from "ccat-api";
-import { WidgetCcatComponent } from "cheshire-cat-widget-angular";
+import { WidgetCcatComponent } from "ccat-chat-widget-angular";
 
 @Component({
   selector: "app-root",
@@ -77,15 +77,15 @@ You can drop the widget anywhere in your HTML and configure it via inputs:
 
 ### 💬 Message Settings
 
-| Property        | Description                                                |
-| --------------- | ---------------------------------------------------------- |
-| `initialPhrase` | Initial bot message                                        |
-| `sorryPhrase`   | Error message when something goes wrong                    |
-| `agentName`     | Custom name for your bot                                   |
-| `imgSrc`        | Logo or avatar image URL                                   |
-| `imgAlt`        | Alt text for the image                                     |
-| `openChatImgSrc`| Logo or avatar image URL for the image that opens the chat |
-| `openChatImgAlt`| Alt text for the image that opens the chat                 |
+| Property         | Description                                                |
+| ---------------- | ---------------------------------------------------------- |
+| `initialPhrase`  | Initial bot message                                        |
+| `sorryPhrase`    | Error message when something goes wrong                    |
+| `agentName`      | Custom name for your bot                                   |
+| `imgSrc`         | Logo or avatar image URL                                   |
+| `imgAlt`         | Alt text for the image                                     |
+| `openChatImgSrc` | Logo or avatar image URL for the image that opens the chat |
+| `openChatImgAlt` | Alt text for the image that opens the chat                 |
 
 ### 🎨 Style Settings
 
