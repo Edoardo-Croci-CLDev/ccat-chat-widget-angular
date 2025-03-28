@@ -6,6 +6,8 @@ import {
   AfterViewChecked,
   ChangeDetectorRef,
   Input,
+  SimpleChanges,
+  OnChanges,
   inject,
   NgZone,
 } from '@angular/core';
@@ -73,6 +75,8 @@ export class WidgetCcatComponent implements OnInit, AfterViewChecked {
   @Input() agentName = 'My cheshire-cat-ai';
   @Input() imgSrc = 'https://cheshire-cat-ai.github.io/docs/assets/img/cheshire-cat-logo.svg';
   @Input() imgAlt = 'ccat logo';
+  @Input() openChatImgSrc = 'https://cheshire-cat-ai.github.io/docs/assets/img/cheshire-cat-logo.svg';
+  @Input() openChatImgAlt = 'ccat logo';
   @Input() showChatTop = true;
 
   @Input() userMessageBgColor = '#fee600'; // Colore di default (sfondo) per i messaggi utente
