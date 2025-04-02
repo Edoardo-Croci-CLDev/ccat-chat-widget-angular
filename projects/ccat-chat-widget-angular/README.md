@@ -5,7 +5,7 @@ Perfect for adding a conversational assistant to your Angular apps with minimal 
 
 > 💬 Plug, personalize, and play: your smart chatbot is ready to go.
 
-![Cheshire Cat Widget Demo](https://your-gif-url-here.com/demo.gif)
+![Cheshire Cat Widget Demo](https://raw.githubusercontent.com/Edoardo-Croci-CLDev/ccat-chat-widget-angular/master/cheshire-cat-chat.gif)
 
 ## 🚀 System Requirements
 
@@ -28,7 +28,7 @@ Since this is a **standalone component**, you can import it directly into your c
 ```ts
 import { Component } from "@angular/core";
 import { CatClient } from "ccat-api";
-import { WidgetCcatComponent } from 'ccat-chat-widget-angular';
+import { WidgetCcatComponent } from "ccat-chat-widget-angular";
 
 @Component({
   selector: "app-root",
